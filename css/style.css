@@ -1,0 +1,86 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: darkgreen;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+header, footer {
+    background: #003300;
+    padding: 20px;
+}
+
+header span {
+    color: gold;
+}
+
+main {
+    padding: 30px;
+}
+
+.conteudo h1 {
+    color: gold;
+    font-size: 45px;
+    animation: brilho 2s infinite alternate;
+}
+
+.conteudo h2, .conteudo p {
+    margin: 15px;
+}
+
+.arvore {
+    margin: 30px auto;
+    font-size: 100px;
+    animation: girar 5s infinite linear;
+}
+
+.presente, .sino {
+    position: fixed;
+    bottom: 20px;
+    font-size: 40px;
+}
+
+.presente {
+    left: 20px;
+    animation: pular 2s infinite;
+}
+
+.sino {
+    right: 20px;
+    animation: balancar 1s infinite;
+}
+
+.neve {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: cair 8s infinite linear;
+}
+
+@keyframes brilho {
+    from { opacity: 0.5; }
+    to { opacity: 1; }
+}
+
+@keyframes girar {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes pular {
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes balancar {
+    50% { transform: rotate(20deg); }
+}
+
+@keyframes cair {
+    to { transform: translateY(100vh); }
+}
