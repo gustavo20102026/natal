@@ -57,12 +57,7 @@ main {
     animation: balancar 1s infinite;
 }
 
-.neve {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    animation: cair 8s infinite linear;
-}
+
 
 @keyframes brilho {
     from { opacity: 0.5; }
@@ -83,4 +78,37 @@ main {
 
 @keyframes cair {
     to { transform: translateY(100vh); }
+}
+.rena {
+    background-image: url("../img/pngtree-adorable-reindeer-for-christmas-background-and-greeting-card-png-image_5586496__1_-removebg-preview.png");
+    width: 100px;
+    height: 100px;
+    animation: girar 5s infinite linear;
+}
+.img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rena2{
+    animation: girar 5s infinite linear;
+}
+body {
+    background-image: radial-gradient(white 2px, transparent 2px);
+    background-size: 50px 50px;
+    animation: neve 5s linear infinite;
+}
+
+@keyframes neve {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 200px;
+    }
+}
+
+.arvore {
+    position: relative;
+    z-index: 1;
 }
